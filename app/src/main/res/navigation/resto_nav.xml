@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/resto_nav"
+    app:startDestination="@id/foodListFragment">
+
+    <fragment
+        android:id="@+id/foodListFragment"
+        android:name="com.example.testapp.FoodListFragment"
+        android:label="Daftar Menu Makanan"
+        tools:layout="@layout/fragment_food_list" />
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.testapp.PaymentFragment"
+        android:label="Total Pesanan"
+        tools:layout="@layout/fragment_payment" />
+
+    <navigation
+        android:id="@+id/pembayaranFragment"
+        app:startDestination="@id/billFragment">
+        <fragment
+            android:id="@+id/billFragment"
+            android:name="com.example.testapp.BillFragment"
+            android:label="Cara Pemabayaran"
+            tools:layout="@layout/fragment_bill">
+            <action
+                android:id="@+id/actionInvoice"
+                app:destination="@id/invoiceFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/invoiceFragment"
+            android:name="com.example.testapp.InvoiceFragment"
+            android:label="Onvoice"
+            tools:layout="@layout/fragment_invoice" >
+            <argument
+                android:name="namaBayar"
+                app:argType="string"
+                app:nullable="true" />
+        </fragment>
+    </navigation>
+
+</navigation>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="food">Food</string>
+    <string name="bill">Bill</string>
+    <string name="detail_harga">Detail Harga</string>
+    <string name="menu_makanan">Menu Makanan</string>
+    <array name="bayar_image">
+        <item>@drawable/ic_shope</item>
+        <item>@drawable/ic_dana</item>
+        <item>@drawable/ic_gopay</item>
+        <item>@drawable/ic_ovo</item>
+        <item>@drawable/ogya</item>
+    </array>
+    <array name="bayar_nama">
+        <item>Shoope</item>
+        <item>Dana</item>
+        <item>Gopay</item>
+        <item>OVO</item>
+        <item>Ogya</item>
+    </array>
+    <string name="format_hasil_rupiah">: Rp %1$s</string>
+    <string name="format_rupiah">Rp %1$s</string>
+    <string name="format_total_rupiah">Total : Rp %1$s</string>
+    <string name="total_makanan">%1$s(%2$d)</string>
+    <string name="bayar_pake">Pembayaran memakai %1$s</string>
+</resources>
